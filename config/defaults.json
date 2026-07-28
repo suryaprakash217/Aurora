@@ -1,0 +1,22 @@
+{
+  "shell": {
+    "name": "Aurora",
+    "version": "0.1.0",
+    "theme": "aurora-dark",
+    "animations": true,
+    "performance": {
+      "enable_blur": false,
+      "frame_limit": 60
+    }
+  },
+  "modules": {
+    "status": {
+      "enabled": true
+    }
+  },
+  "platform": {
+    "desktop": "Hyprland",
+    "display_server": "Wayland",
+    "distribution": "Arch Linux"
+  }
+}
