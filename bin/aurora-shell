@@ -1,31 +1,15 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
-import argparse
-import json
 import sys
 from pathlib import Path
 
+# Add project root to sys.path to allow running direct from repository clone
 ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from aurora import AuroraEngine, load_config
-from aurora.modules.status import StatusModule
-
-
-def main() -> int:
-    parser = argparse.ArgumentParser(description="Launch the Aurora shell core")
-    parser.add_argument("--config", type=str, default=None, help="Path to a JSON config file")
-    args = parser.parse_args()
-
-    config = load_config(args.config)
-    engine = AuroraEngine(config)
-    engine.register_module(StatusModule())
-    payload = engine.run()
-    print(json.dumps(payload, indent=2))
-    return 0
-
+from aurora.main import main
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

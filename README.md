@@ -11,9 +11,28 @@ Aurora is a modular desktop shell project for Hyprland on Arch Linux. The reposi
 
 ## Quick start
 
-1. Review the documentation in docs/.
-2. Install the package in editable mode if you plan to develop it.
-3. Run the test suite before making changes.
+1. **Review the documentation** in [docs/](docs/).
+2. **Install the package** in editable mode:
+   ```bash
+   pip install -e .
+   ```
+3. **Run the shell CLI**:
+   ```bash
+   aurora-shell
+   ```
+   You can also specify a custom configuration file:
+   ```bash
+   aurora-shell --config path/to/config.json
+   ```
+   Or display version and help info:
+   ```bash
+   aurora-shell --version
+   aurora-shell --help
+   ```
+4. Run the test suite:
+   ```bash
+   pytest
+   ```
 
 ## Documentation
 
