@@ -42,14 +42,14 @@ All Aurora implementation is designed from the ground up using standard Wayland,
    aurora-shell --gui
    ```
 6. **Run the test suite**:
-   - **Core (Non-GUI) Tests**:
-     ```bash
-     .venv/bin/python -m pytest tests/core aurora/core/tests aurora/compositor/tests aurora/input/tests
-     ```
-   - **GUI (Qt) Tests** (requires `pytest-qt` package and active display):
-     ```bash
-     .venv/bin/python -m pytest tests/gui
-     ```
+   **Core (Non-GUI) Tests**:
+   ```bash
+   .venv/bin/python -m pytest tests/core aurora/core/tests aurora/compositor/tests aurora/input/tests
+   ```
+   **GUI (Qt) Tests** (requires `pytest-qt` package and active display):
+   ```bash
+   .venv/bin/python -m pytest tests/gui
+   ```
 
 ---
 
