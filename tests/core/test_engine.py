@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from aurora.engine import AuroraEngine
 from aurora.modules.status import StatusModule
 

@@ -3,6 +3,9 @@ name = "aurora-shell"
 version = "0.1.0"
 description = "An original modular desktop shell architecture for Hyprland on Arch Linux"
 requires-python = ">=3.11"
+dependencies = [
+    "PySide6>=6.7"
+]
 authors = [{name = "Aurora Contributors"}]
 license = {text = "MIT"}
 

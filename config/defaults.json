@@ -4,6 +4,18 @@
     "version": "0.1.0",
     "theme": "aurora-dark",
     "animations": true,
+    "wallpaper": null,
+    "background_color": "#181a26",
+    "panel": {
+      "position": "top",
+      "height": 56
+    },
+    "clock": {
+      "format": "%a %b %d, %I:%M %p"
+    },
+    "launcher": {
+      "visible": true
+    },
     "performance": {
       "enable_blur": false,
       "frame_limit": 60
