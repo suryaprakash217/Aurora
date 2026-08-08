@@ -6,10 +6,11 @@ from typing import Any
 class StatusModule:
     """A simple module that reports the shell status payload."""
 
+    __slots__ = ()
     name = "status"
 
     def initialize(self, context: dict[str, Any]) -> None:
-        self.context = context
+        return None
 
     def run(self, context: dict[str, Any]) -> dict[str, Any]:
         return {
